@@ -11,6 +11,8 @@ import { PostapiService } from '../../service/postapi.service';
 export class UpdateCommentComponent {
   comment:any;
   commentId:any;
+  userRole:any=localStorage.getItem("userRole");
+  loginStatus:any=localStorage.getItem("loginStatus")
   constructor(private router:Router, private service:PostapiService, private activatedRoute:ActivatedRoute)
   {
     this.commentId = this.activatedRoute.snapshot.params['commentId'];
