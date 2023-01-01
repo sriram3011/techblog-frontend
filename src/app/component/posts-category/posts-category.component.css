@@ -1,0 +1,11 @@
+.card {
+    
+    border: 10px solid rgba(0,0,0,.125);
+    
+}
+img, svg {
+   
+    height: 200px;
+    
+}
+

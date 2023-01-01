@@ -1,0 +1,32 @@
+<div class="image" style="background-image:url('/assets/002.jpg');
+    background-size: cover; 
+    background-position: full;  
+    background-repeat: no-repeat;
+    height: 680px;
+    width: 1800px;">
+      <div class="container mt-3">
+
+  <br>
+  
+  <button class="btn btn-danger float-end " (click)="logout()">Logout</button>
+<div class="jumbotron">
+  <h1>Welcome To Our Page</h1>
+  <p class="lead" >This page used to manage your posts and comments.</p>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/manage-posts" role="button">Manage Posts</a>&nbsp;
+    <a class="btn btn-primary btn-lg" href="/manage-comments" role="button">Manage Comments</a>&nbsp;
+    <a class="btn btn-primary btn-lg" href="/manage-users" role="button" *ngIf="userRole=='ADMIN'">Manage Users</a>&nbsp;
+  </p>
+  <br><br><br>
+<br><br><br>
+</div>
+
+<br><br><br>
+<br><br><br>
+<br><br>
+<br>
+</div>
+
+
+

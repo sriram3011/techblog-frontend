@@ -1,0 +1,26 @@
+<div class="container">
+<h2 align="center" style="font-size:50px;">Tech Related Posts</h2>
+
+<div class="container mt-3"style="background-image: url('assets/00000.webp'); background-repeat:no-repeat;height: 400px;"></div>
+    
+  
+<br/>
+
+
+<div class="container">
+    <div class="row">
+
+<div class="card" style="width: 20rem;" *ngFor="let post of posts">
+    <img class="card-img-top" src="data:image/png;base64,{{post.postImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{post.postTitle}}</h5>
+      <p>{{post.postContent | slice : 0 :40 }}....</p>
+
+      <a href="/post/{{post.postId}}" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+
+    </div>
+</div>
+</div>
+<br/>

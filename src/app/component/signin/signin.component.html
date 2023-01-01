@@ -1,0 +1,48 @@
+<div class="image" style="background-image:url('/assets/0.jpg');
+    background-size: cover; 
+    background-position: full;  
+    background-repeat: no-repeat;
+    height: 680px;
+    width: 1800px;">
+<br>
+<div class="container mt-3">
+    <br/><br><br><br>
+    <h2  style="font-size:xx-large;">User Signin</h2>
+        <fieldset>
+          <div id="legend">
+            <legend class="" style="font-size: x-large;">Please signin to continue!!</legend>
+          </div>
+          <div class="control-group">
+            <!-- E-mail -->
+            <label class="control-label" for="email">E-mail</label>
+            <div class="controls">
+              <input type="email" id="email" name="email" placeholder="Enter your email" class="input-xlarge"#email>
+              
+            </div>
+          </div>
+       
+          <div class="control-group" >
+            <!-- Password-->
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+              <input type="password" id="password" name="password" placeholder="Set Password" class="input-xlarge"#password>
+             
+            </div>
+          </div>
+       
+        <br>
+       
+          <div class="control-group">
+            <!-- Button -->
+            <div class="controls" >
+              <button type="submit" class="btn btn-success" (click)="signin(email.value, password.value)">Signin</button>
+            </div>
+          </div>
+        </fieldset>
+
+        <br><br><br><br>
+
+      
+    </div>
+    <br><br><br>
+  </div>
