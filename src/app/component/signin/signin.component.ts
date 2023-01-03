@@ -28,6 +28,7 @@ signin(email:any, password:any)
       localStorage.setItem("email",email);
       localStorage.setItem("userId",response.userId);
       localStorage.setItem("userRole",response.userRole);
+      localStorage.setItem("userName",response.userName);
 
       this.router.navigate(['dashboard'])
     },
